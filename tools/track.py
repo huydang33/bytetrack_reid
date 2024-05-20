@@ -113,6 +113,7 @@ def make_parser():
     parser.add_argument('--feat_args_cfg', type=str, default=None, help='Feature extractor config file')
     parser.add_argument('--feat_model_weights', type=str, default=None, help='Pretrained feature extractor file path')
     parser.add_argument('--reid_weight', type=float, default=0.1, help='ReID weight when combining with IoU')
+    parser.add_argument('--fusion_type', type=str, default=None, help='Fusion type')
 
     return parser
 
